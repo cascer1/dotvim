@@ -50,6 +50,12 @@ set softtabstop=4
 
 set expandtab
 
+set title
+
 map Y y$
 
 nnoremap <C-L> :nohl<CR><C-L>
+
+colorscheme Tomorrow-Night-Blue
+colorscheme Tomorrow-Night-Blue
+colorscheme Tomorrow-Night-Blue
