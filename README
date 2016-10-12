@@ -1,0 +1,8 @@
+Installation:
+
+    git clone https://github.com/cascer1/dotbash.git ~/.bash
+
+Create symlinks:
+
+    rm ~/.bashrc
+    ln -s ~/.bash/bashrc ~/.bashrc
