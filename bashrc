@@ -108,16 +108,16 @@ fi
 # Include custom files, so that this file does not need to be modified
 
 # Custom aliases
-if [ -f ~/.bash/aliases]; then
+if [ -f ~/.bash/aliases ]; then
     . ~/.bash/aliases
 fi
 
 # Custom scripts
-if [ -f ~/.bash/scripts]; then
+if [ -f ~/.bash/scripts ]; then
     . ~/.bash/scripts
 fi
 
 # Private items, should not be pushed to git
-if [ -f ~/.bash/private]; then
+if [ -f ~/.bash/private ]; then
     . ~/.bash/private
 fi
