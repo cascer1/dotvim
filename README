@@ -1,4 +1,9 @@
-Installation:
+#Installation (for lazy people):
+WARNING: This overrides your `.vimrc`, make sure you have a backup!
+
+    bash <(curl -s https://raw.githubusercontent.com/cascer1/dotvim/master/install.sh)
+
+#Installation (for not-so lazy people):
 
     git clone https://github.com/cascer1/dotvim.git ~/.vim
 
