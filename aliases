@@ -1,3 +1,4 @@
 alias lsa='ls -lAh'
 alias ..='cd ../'
 alias cls='clear; ls'
+alias hacker='dmesg | pv -qL 64'
