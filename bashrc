@@ -24,7 +24,7 @@ HISTFILESIZE=2000
 shopt -s checkwinsize
 
 # Include dotfiles when moving or copying
-shipt -s dotglob
+shopt -s dotglob
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
