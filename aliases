@@ -6,8 +6,6 @@ alias removegps='exiftool -gps:all= -xmp:geotag= -m'
 alias removetimestamp="sed -r 's/\[[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}\s[0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}\]//g' -i --"
 alias tohex='printf "%x\n"'
 alias hextime='tohex $(date +%s)'
-alias wifioff='sudo iwconfig wlan0 txpower off'
-alias wifion='sudo iwconfig wlan0 txpower auto; sleep 1; sudo iwconfig wlan0 txpower auto'
 alias path='echo $PATH | tr : \\n'
 
 
