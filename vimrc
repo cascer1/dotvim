@@ -10,7 +10,8 @@ set nocompatible
 " ---
 " -- Display
 set title               " Update terminal title
-set number              " Display line numbers
+set number              " Display line number of current line
+set relativenumber      " Display relative line numbers for other lines
 set ruler               " Display cursor position
 set wrap                " Wrap long lines
 set scrolloff=3         " Display at least 3 lines around cursor
@@ -45,11 +46,9 @@ set confirm             " Ask for confirmation when a command could otherwise fa
 set cmdheight=2         " Make command input height 2 lines tall
 set notimeout ttimeout ttimeoutlen=200 " Make entering commands less of a pain
 set pastetoggle=<F11>   " F11 toggles paste mode (stop auto indentation)
-
+set mouse=a
 set shiftwidth=4
-
 set softtabstop=4
-
 set expandtab
 
 " -- NERDTree
