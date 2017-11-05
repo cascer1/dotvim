@@ -2,12 +2,19 @@
 " ---
 
 " Load pathogen
-execute pathogen#infect()
+" execute pathogen#infect()
 
-" Disable vi compatibility, because who uses vi these days
-set nocompatible
+" Load vim-plug
+call plug#begin('~/.vim/plugged')
 
-" ---
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tpope/vim-fugitive'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+
+call plug#end()
+
+
 " -- Display
 set title               " Update terminal title
 set number              " Display line number of current line
