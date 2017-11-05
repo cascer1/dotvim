@@ -31,7 +31,7 @@ set t_vb=
 
 " -- Command completion
 set wildmenu            " Enable command completion
-
+" set wildmode=longest:list,full
 
 " -- Editing convenience
 filetype indent plugin on
@@ -42,7 +42,6 @@ set hidden
 set nostartofline
 set laststatus=2        " Always show status line
 set confirm             " Ask for confirmation when a command could otherwise fail 
-set mouse=a             " Enable mouse support
 set cmdheight=2         " Make command input height 2 lines tall
 set notimeout ttimeout ttimeoutlen=200 " Make entering commands less of a pain
 set pastetoggle=<F11>   " F11 toggles paste mode (stop auto indentation)
@@ -53,9 +52,15 @@ set softtabstop=4
 
 set expandtab
 
+" -- NERDTree
+" Close vim if only NERDTree is open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+
 " -- Key bindings
 " ctrl-L to clear search
 nnoremap <C-L> :nohl<CR><C-L>
 " Yank to end of line
 map Y y$
-
+" Open NERDTree file explorer
+map <C-n> :NERDTreeToggle<CR>
