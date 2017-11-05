@@ -1,18 +1,11 @@
-#Installation (for lazy people):
+==Installation (for lazy people):
 WARNING: This overrides your `.vimrc`, make sure you have a backup!
 
     bash <(curl -s https://raw.githubusercontent.com/cascer1/dotvim/master/install.sh)
 
-#Installation (for not-so lazy people):
+==Installation (for not-so lazy people):
 
     git clone https://github.com/cascer1/dotvim.git ~/.vim
-
-Create symlinks:
-
     ln -s ~/.vim/vimrc ~/.vimrc
 
-Switch to the `~/.vim` directory, and fetch submodules:
-
-    cd ~/.vim
-    git submodule init
-    git submodule update
+NOTE: After installation, vim-plug will automatically install itself when vim is first launched
