@@ -16,6 +16,10 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'kien/ctrlp.vim'
 Plug 'bling/vim-airline'
+Plug 'junegunn/goyo.vim', { 'for': ['asciidoc', 'markdown', 'mkd', 'text'] }
+Plug 'junegunn/limelight.vim', { 'for': ['asciidoc', 'markdown', 'mkd', 'text'] }
+Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
@@ -66,6 +70,23 @@ set expandtab
 " -- NERDTree
 " Close vim if only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Goyo / Limelight
+" Enable and disable Limelight with Goyo
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+" -- Limelight
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+
+" Color name (:help gui-colors) or RGB color
+let g:limelight_conceal_guifg = 'DarkGray'
+let g:limelight_conceal_guifg = '#777777'
+
+" Default: 0.5
+let g:limelight_default_coefficient = 0.7
 
 
 " -- Key bindings
