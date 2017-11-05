@@ -36,6 +36,8 @@ set t_vb=
 
 set mouse=a
 
+set paste
+
 set cmdheight=2
 
 set number
@@ -56,6 +58,4 @@ map Y y$
 
 nnoremap <C-L> :nohl<CR><C-L>
 
-colorscheme Tomorrow-Night-Blue
-colorscheme Tomorrow-Night-Blue
-colorscheme Tomorrow-Night-Blue
+colorscheme slate
