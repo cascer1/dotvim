@@ -20,6 +20,8 @@ Plug 'junegunn/goyo.vim', { 'for': ['asciidoc', 'markdown', 'mkd', 'text'] }
 Plug 'junegunn/limelight.vim', { 'for': ['asciidoc', 'markdown', 'mkd', 'text'] }
 Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-commentary'
+Plug 'reedes/vim-colors-pencil'
+Plug 'rakr/vim-one'
 
 call plug#end()
 
@@ -71,10 +73,25 @@ set expandtab
 " Close vim if only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Goyo / Limelight
+" -- Airline
+let g:airline_theme='one'
+
+
+" -- Goyo / Limelight
+
+function! s:goyo_enter()
+    colorscheme one
+    Limelight
+endfunction
+
+function! s:goyo_leave()
+    colorscheme slate
+    Limelight!
+endfunction
+
 " Enable and disable Limelight with Goyo
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " -- Limelight
 " Color name (:help cterm-colors) or ANSI code
