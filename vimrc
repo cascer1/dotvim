@@ -32,7 +32,7 @@ set ruler               " Display cursor position
 set wrap                " Wrap long lines
 set scrolloff=3         " Display at least 3 lines around cursor
 set guioptions=T        " Enable the toolbar
-colorscheme slate       " Use slate color scheme
+" colorscheme slate       " Use slate color scheme
 set showcmd
 set background=dark     " Dark background
 
