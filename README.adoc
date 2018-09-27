@@ -5,7 +5,7 @@ WARNING: This overrides your `.vimrc`, make sure you have a backup!
 
 == Installation (for not-so lazy people):
 
-    git clone https://github.com/cascer1/dotvim.git ~/.vim
+    git clone git@github.com:cascer1/dotvim.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
 
 NOTE: After installation, vim-plug will automatically install itself when vim is first launched
