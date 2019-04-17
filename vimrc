@@ -14,10 +14,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'bling/vim-airline'
-Plug 'junegunn/goyo.vim', { 'for': ['asciidoc', 'markdown', 'mkd', 'text'] }
-Plug 'junegunn/limelight.vim', { 'for': ['asciidoc', 'markdown', 'mkd', 'text'] }
 Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-commentary'
 
