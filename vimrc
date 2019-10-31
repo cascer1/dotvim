@@ -13,10 +13,12 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
+Plug 'morhetz/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
+Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 
 call plug#end()
@@ -30,7 +32,7 @@ set ruler               " Display cursor position
 set wrap                " Wrap long lines
 set scrolloff=3         " Display at least 3 lines around cursor
 set guioptions=T        " Enable the toolbar
-" colorscheme slate       " Use slate color scheme
+colorscheme gruvbox     " Use gruvbox color scheme
 set showcmd
 set background=dark     " Dark background
 
