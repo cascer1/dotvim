@@ -23,6 +23,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -38,6 +40,11 @@ set guioptions=T        " Enable the toolbar
 colorscheme gruvbox     " Use gruvbox color scheme
 set showcmd
 set background=dark     " Dark background
+
+" -- Airline
+let g:airline_theme='solarized'
+let g:airline_solazired_bg='dark'
+
 
 " -- Search
 set ignorecase          " Ignore case when searching
